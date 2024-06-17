@@ -31,7 +31,7 @@ function HomeCategories() {
               style={{ padding: 30 }}
             >
               <a href="" className="cat-img position-relative overflow-hidden mb-3">
-                <img className="img-fluid"   src={IMAGE_URL + 'categories/' + category.imagePath} alt={category.imagePath} width={300} />
+                <img className="img-fluid"   src={IMAGE_URL + 'categories/' + category.imagePath} alt={category.imagePath} />
               </a>
               <h5 className="font-weight-semi-bold m-0">{category.categoryName}</h5>
             </div>

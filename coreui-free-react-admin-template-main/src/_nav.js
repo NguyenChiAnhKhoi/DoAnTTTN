@@ -132,6 +132,16 @@ const _nav = [
         name: 'Slide Show',
         to: '/base/slideshows/list',
       },
+      {
+        component: CNavItem,
+        name: 'Customer',
+        to: '/base/customer/list',
+      },
+      {
+        component: CNavItem,
+        name: 'Order',
+        to: '/base/order/list',
+      },
     ],
   },
   // {
