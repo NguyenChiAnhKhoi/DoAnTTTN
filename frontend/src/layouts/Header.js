@@ -152,7 +152,7 @@ function Header() {
                   <input
                     type="text"
                     className="form-control"
-                    placeholder="Search for products"
+                    placeholder="Tìm kiếm sản phẩm..."
                     value={searchValue}
                     onChange={handleSearchChange}
                   />
@@ -188,7 +188,7 @@ function Header() {
               onClick={handleToggleCollapse}
               style={{ height: 65, marginTop: "-1px", padding: "0 30px" }}
             >
-              <h6 className="m-0">Categories</h6>
+              <h6 className="m-0">Danh mục</h6>
               <i className={`fa fa-angle-${isCollapsed ? 'down' : 'up'} text-dark`} />
             </button>
 
@@ -256,27 +256,25 @@ function Header() {
                 id="navbarCollapse"
               >
                 <div className="navbar-nav mr-auto py-0">
-                  <a href="index.html" className="nav-item nav-link active">
-                    Home
-                  </a>
+                  <Link to={'/'} className="nav-item nav-link">
+                    Trang chủ
+                  </Link>
                   <Link to={"/tat-ca-san-pham"} className="nav-item nav-link">
                     Shop
                   </Link>
-                  <a href="detail.html" className="nav-item nav-link">
-                    Shop Detail
-                  </a>
                   <Dropdown className="nav-item dropdown">
                     <Dropdown.Toggle
                       className="nav-link dropdown-toggle"
                       data-toggle="dropdown"
                     >
-                      Pages
+                      Các trang khác
                     </Dropdown.Toggle>
                     <Dropdown.Menu className="dropdown-menu rounded-0 m-0">
-                      <Dropdown.Item href="cart.html" className="dropdown-item">
-                        Shopping Cart
+                  
+                      <Dropdown.Item href="/gio-hang"  className="dropdown-item">
+                        Giỏ hàng
                       </Dropdown.Item>
-                      <Dropdown.Item href="checkout.html" className="dropdown-item">
+                      <Dropdown.Item href="/thanh-toan" className="dropdown-item">
                         Checkout
                       </Dropdown.Item>
                     </Dropdown.Menu>
@@ -285,8 +283,8 @@ function Header() {
 
 
 
-                  <a href="contact.html" className="nav-item nav-link">
-                    Contact
+                  <a href="lien-he" className="nav-item nav-link">
+                   Liên hệ
                   </a>
                 </div>
                 <div className="navbar-nav ml-auto py-0">

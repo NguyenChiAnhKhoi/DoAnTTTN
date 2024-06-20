@@ -95,14 +95,14 @@ function Payment() {
                 <div class="row px-xl-5">
                     <div class="col-lg-8">
                         <div class="mb-4">
-                            <h4 class="font-weight-semi-bold mb-4">Billing Address</h4>
+                            <h4 class="font-weight-semi-bold mb-4">Địa chỉ</h4>
                             <div class="row">
                                 <div class="col-md-6 form-group">
-                                    <label>First Name</label>
+                                    <label>Tên</label>
                                     <input class="form-control" type="text" value={firstName} />
                                 </div>
                                 <div class="col-md-6 form-group">
-                                    <label>Last Name</label>
+                                    <label>Họ</label>
                                     <input class="form-control" type="text" value={lastName} />
                                 </div>
                                 <div class="col-md-6 form-group">
@@ -110,7 +110,7 @@ function Payment() {
                                     <input class="form-control" type="text" value={email} />
                                 </div>
                                 <div class="col-md-6 form-group">
-                                    <label>Mobile No</label>
+                                    <label>Số điện thoại</label>
                                     <input class="form-control" type="text" value={phone} />
                                 </div>
                             

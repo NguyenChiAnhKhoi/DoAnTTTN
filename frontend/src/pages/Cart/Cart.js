@@ -93,11 +93,11 @@ function Cart() {
                         <table class="table table-bordered text-center mb-0">
                             <thead class="bg-secondary text-dark">
                                 <tr>
-                                    <th>Products</th>
-                                    <th>Price</th>
-                                    <th>Quantity</th>
+                                    <th>Sản phẩm</th>
+                                    <th>Giá</th>
+                                    <th>Số lượng</th>
                                     
-                                    <th>Remove</th>
+                                    <th>Xóa</th>
                                 </tr>
                             </thead>
                             <tbody class="align-middle">
@@ -131,23 +131,23 @@ function Cart() {
                     <div class="col-lg-4">
                         <form class="mb-5" action="">
                             <div class="input-group">
-                                <input type="text" class="form-control p-4" placeholder="Coupon Code" />
+                                <input type="text" class="form-control p-4" placeholder="Mã giảm giá" />
                                 <div class="input-group-append">
-                                    <button class="btn btn-primary">Apply Coupon</button>
+                                    <button class="btn btn-primary">Kích hoạt mã giảm giá</button>
                                 </div>
                             </div>
                         </form>
                         <div class="card border-secondary mb-5">
                             <div class="card-header bg-secondary border-0">
-                                <h4 class="font-weight-semi-bold m-0">Cart Summary</h4>
+                                <h4 class="font-weight-semi-bold m-0">Thông tin giỏ hàng</h4>
                             </div>
     
                             <div class="card-footer border-secondary bg-transparent">
                                 <div class="d-flex justify-content-between mt-2">
-                                    <h5 class="font-weight-bold">Total</h5>
+                                    <h5 class="font-weight-bold">Tổng cộng</h5>
                                     <h5 class="font-weight-bold">{totalPrice} VND</h5>
                                 </div>
-                                <button class="btn btn-block btn-primary my-3 py-3" onClick={handleCheckout}>Proceed To Checkout</button>
+                                <button class="btn btn-block btn-primary my-3 py-3" onClick={handleCheckout}>Thanh toán</button>
                             </div>
                         </div>
                     </div>

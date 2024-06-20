@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 function Offer() {
   return (
     <>
@@ -10,12 +11,12 @@ function Offer() {
             <img src={require("../../assets/img/offer-1.png")} alt="" />
             <div className="position-relative" style={{ zIndex: 1 }}>
               <h5 className="text-uppercase text-primary mb-3">
-                20% off the all order
+                Giảm giá 20% cho tất cả đơn hàng 
               </h5>
-              <h1 className="mb-4 font-weight-semi-bold">Spring Collection</h1>
-              <a href="" className="btn btn-outline-primary py-md-2 px-md-3">
-                Shop Now
-              </a>
+              <h1 className="mb-4 font-weight-semi-bold">Thời Trang Mùa Xuân</h1>
+              <Link to={'/tat-ca-san-pham'} className="btn btn-outline-primary py-md-2 px-md-3">
+               Xem ngay
+              </Link>
             </div>
           </div>
         </div>
@@ -24,12 +25,12 @@ function Offer() {
             <img src={require("../../assets/img/offer-2.png")} alt="" />
             <div className="position-relative" style={{ zIndex: 1 }}>
               <h5 className="text-uppercase text-primary mb-3">
-                20% off the all order
+               Giảm giá 20% cho tất cả đơn hàng
               </h5>
-              <h1 className="mb-4 font-weight-semi-bold">Winter Collection</h1>
-              <a href="" className="btn btn-outline-primary py-md-2 px-md-3">
-                Shop Now
-              </a>
+              <h1 className="mb-4 font-weight-semi-bold">Thời Trang Mùa Đông</h1>
+              <Link to={'/tat-ca-san-pham'} className="btn btn-outline-primary py-md-2 px-md-3">
+               Xem ngay
+              </Link>
             </div>
           </div>
         </div>

@@ -16,24 +16,18 @@ export async function callApi(endpoint, method = 'GET', body) {
 }
 
 
-export function getAllOrders(endpoint, data) {
+export function getAllContacts(endpoint, data) {
   return callApi(endpoint, "GET", data);
 }
-export function getOrdersById(endpoint, id) {
+export function getContactsById(endpoint, id) {
   return callApi(`${endpoint}/${id}`, "GET");
 }
-export function editOrders(endpoint, data) {
+export function editContacts(endpoint, data) {
   return callApi(endpoint, "PUT", data);
 }
-export function addOrders(endpoint, data) {
+export function addContacts(endpoint, data) {
   return callApi(endpoint, "POST", data);
 }
-export function deleteOrdersById(endpoint, id) {
+export function deleteContactsById(endpoint, id) {
   return callApi(`${endpoint}/${id}`, "DELETE");
-}
-export function getAllProducts(endpoint) {
-  return callApi(endpoint, "GET");
-}
-export function getAllCustomers(endpoint, data) {
-  return callApi(endpoint, "GET", data);
 }
